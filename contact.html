@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Get in touch with Starline Studio for general questions, partnerships, or press." />
+    <meta property="og:title" content="Contact | Starline Studio" />
+    <meta property="og:description" content="Reach the two-person team behind Nytpix, Abundance, and Listmas." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://starlinestudios.app/assets/img/logo.png" />
+    <title>Contact | Starline Studio</title>
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+  <body class="studio-shell" id="top">
+    <main class="studio-frame-wrap">
+      <div class="studio-frame">
+        <nav class="navbar navbar-expand-lg studio-navbar">
+          <div class="container studio-container">
+            <a class="navbar-brand studio-wordmark" href="index.html">
+              <img class="studio-brand-mark" src="assets/img/StarlineLogo.png" alt="" />
+              <span>Starline Studio</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+              <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2">
+                <li class="nav-item"><a class="nav-link" href="index.html#top">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#products">Products</a></li>
+                <li class="nav-item"><a class="nav-link" href="index.html#approach">Studio</a></li>
+                <li class="nav-item"><a class="nav-link" href="roadmap.html">Roadmap</a></li>
+                <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Contact</a></li>
+              </ul>
+              <div class="d-flex align-items-center gap-2 mt-3 mt-lg-0">
+                <a class="btn studio-nav-cta" href="#contactForm">Get in touch</a>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <section class="studio-showcase">
+          <div class="container studio-container">
+            <div class="studio-legal-wrap">
+              <div class="studio-legal-card">
+                <p class="studio-kicker mb-2">Contact</p>
+                <h1 class="studio-section-title mb-3">Get in touch with Starline Studio.</h1>
+                <p class="mb-0">
+                  General questions, partnerships, press, or anything else that
+                  isn't feedback on a specific app &mdash; send it here and it
+                  goes straight to the two of us.
+                  Looking to report a bug or request a feature instead?
+                  <a href="feedback.html">Use the feedback form</a>.
+                </p>
+
+                <!--
+                  Delivery: send-contact.php on the same IONOS host (PHP mail()).
+                  Mirrors send-feedback.php; see that file for the deliverability
+                  setting to check (the From address / SPF).
+                -->
+                <form
+                  id="contactForm"
+                  class="studio-form"
+                  action="send-contact.php"
+                  method="POST"
+                >
+                  <!-- Spam honeypot: real people never fill this in. -->
+                  <input type="text" name="_honey" class="studio-hp" tabindex="-1" autocomplete="off" />
+
+                  <div class="studio-form-row studio-form-row-2">
+                    <div class="studio-field">
+                      <label for="ct-name">Name <span class="studio-field-hint">(optional)</span></label>
+                      <input class="studio-input" type="text" id="ct-name" name="name" autocomplete="name" />
+                    </div>
+                    <div class="studio-field">
+                      <label for="ct-email">Email <span class="studio-field-hint">(so we can reply)</span></label>
+                      <input class="studio-input" type="email" id="ct-email" name="email" autocomplete="email" required />
+                    </div>
+                  </div>
+
+                  <fieldset class="studio-fieldset">
+                    <legend class="studio-legend">What's this about?</legend>
+                    <div class="studio-choices">
+                      <label class="studio-choice">
+                        <input type="radio" name="topic" value="General question" checked />
+                        <span class="studio-choice-body"><i class="bi bi-chat-dots" aria-hidden="true"></i><span>General question</span></span>
+                      </label>
+                      <label class="studio-choice is-listmas">
+                        <input type="radio" name="topic" value="Partnership / business" />
+                        <span class="studio-choice-body"><i class="bi bi-briefcase" aria-hidden="true"></i><span>Partnership / business</span></span>
+                      </label>
+                      <label class="studio-choice is-nytpix">
+                        <input type="radio" name="topic" value="Press" />
+                        <span class="studio-choice-body"><i class="bi bi-newspaper" aria-hidden="true"></i><span>Press</span></span>
+                      </label>
+                      <label class="studio-choice is-abundance">
+                        <input type="radio" name="topic" value="Support" />
+                        <span class="studio-choice-body"><i class="bi bi-life-preserver" aria-hidden="true"></i><span>Support</span></span>
+                      </label>
+                      <label class="studio-choice is-bug">
+                        <input type="radio" name="topic" value="Something else" />
+                        <span class="studio-choice-body"><i class="bi bi-three-dots" aria-hidden="true"></i><span>Something else</span></span>
+                      </label>
+                    </div>
+                  </fieldset>
+
+                  <div class="studio-field">
+                    <label for="ct-message">Your message</label>
+                    <textarea class="studio-textarea" id="ct-message" name="message" required placeholder="How can we help?"></textarea>
+                  </div>
+
+                  <div class="studio-form-actions">
+                    <button type="submit" class="btn studio-dark-pill">Send message</button>
+                    <p class="studio-form-status" id="formStatus" role="status" aria-live="polite"></p>
+                  </div>
+                </form>
+
+                <div class="studio-form-success" id="formSuccess" tabindex="-1" hidden>
+                  <h2>Thanks &mdash; that's landed.</h2>
+                  <p class="mb-0">
+                    We've got your message and will get back to you at the email
+                    address you left, usually from
+                    <a href="mailto:starline.studio@outlook.com">starline.studio@outlook.com</a>.
+                  </p>
+                </div>
+
+                <p class="muted mt-4 mb-0">
+                  Prefer regular email? Write to
+                  <a href="mailto:starline.studio@outlook.com">starline.studio@outlook.com</a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <footer class="studio-footer">
+          <div class="container studio-container">
+            <div class="studio-footer-shell">
+              <div class="studio-footer-brand">
+                <p class="studio-footer-kicker mb-2">
+                  <img class="studio-brand-mark" src="assets/img/StarlineLogo.png" alt="" />
+                  <span>Starline Studio</span>
+                </p>
+                <p class="studio-footer-copy mb-0">
+                  A two-developer studio designing and refining focused iOS apps with privacy, polish, and long-term quality in mind.
+                </p>
+                <p class="studio-footer-meta mb-0">&copy; 2026 Starline Studio</p>
+              </div>
+              <div class="studio-footer-links small">
+                <div class="studio-footer-group studio-footer-group-site">
+                  <span class="studio-footer-label">Site</span>
+                  <div class="studio-footer-list">
+                    <a class="nav-link px-0" href="index.html#top">Home</a>
+                    <a class="nav-link px-0" href="index.html#products">Products</a>
+                    <a class="nav-link px-0" href="index.html#approach">Studio</a>
+                    <a class="nav-link px-0" href="roadmap.html">Roadmap</a>
+                    <a class="nav-link px-0" href="feedback.html">Feedback</a>
+                    <a class="nav-link px-0" href="contact.html">Contact</a>
+                  </div>
+                </div>
+                <div class="studio-footer-group studio-footer-group-app">
+                  <span class="studio-footer-label">Nytpix</span>
+                  <div class="studio-footer-list">
+                    <a class="nav-link px-0" href="https://apps.apple.com/us/app/nytpix/id6749899310">App Store</a>
+                    <a class="nav-link px-0" href="nytpix/privacy.html">Privacy</a>
+                    <a class="nav-link px-0" href="nytpix/terms.html">Terms</a>
+                  </div>
+                </div>
+                <div class="studio-footer-group studio-footer-group-app">
+                  <span class="studio-footer-label">Abundance</span>
+                  <div class="studio-footer-list">
+                    <a class="nav-link px-0" href="abundance/eula.html">EULA</a>
+                    <a class="nav-link px-0" href="abundance/privacy.html">Privacy</a>
+                    <a class="nav-link px-0" href="abundance/terms.html">Terms</a>
+                  </div>
+                </div>
+                <div class="studio-footer-group studio-footer-group-app">
+                  <span class="studio-footer-label">Listmas</span>
+                  <div class="studio-footer-list">
+                    <a class="nav-link px-0" href="listmas/eula.html">EULA</a>
+                    <a class="nav-link px-0" href="listmas/privacy.html">Privacy</a>
+                    <a class="nav-link px-0" href="listmas/terms.html">Terms</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      (function () {
+        var form = document.getElementById("contactForm");
+        if (!form) return;
+        var statusEl = document.getElementById("formStatus");
+        var successEl = document.getElementById("formSuccess");
+        var submitBtn = form.querySelector('button[type="submit"]');
+
+        // No-JS fallback: send-contact.php redirects back here with ?sent=1
+        // or ?error=1. Reflect that on load.
+        if (/[?&]sent=1/.test(location.search)) {
+          form.hidden = true;
+          successEl.hidden = false;
+        } else if (/[?&]error=1/.test(location.search)) {
+          statusEl.textContent =
+            "That didn't send — please email starline.studio@outlook.com instead.";
+          statusEl.setAttribute("data-state", "error");
+        }
+
+        form.addEventListener("submit", function (e) {
+          e.preventDefault();
+          statusEl.textContent = "";
+          statusEl.removeAttribute("data-state");
+          if (!form.reportValidity()) return;
+
+          submitBtn.disabled = true;
+          submitBtn.textContent = "Sending…";
+
+          fetch(form.getAttribute("action"), {
+            method: "POST",
+            headers: { Accept: "application/json" },
+            body: new FormData(form)
+          })
+            .then(function (r) {
+              return r.json();
+            })
+            .then(function (json) {
+              if (json && json.success) {
+                form.hidden = true;
+                successEl.hidden = false;
+                successEl.focus();
+              } else {
+                throw new Error((json && json.message) || "Something went wrong.");
+              }
+            })
+            .catch(function (err) {
+              statusEl.textContent =
+                "That didn't send — please email starline.studio@outlook.com instead. (" +
+                err.message +
+                ")";
+              statusEl.setAttribute("data-state", "error");
+              submitBtn.disabled = false;
+              submitBtn.textContent = "Send message";
+            });
+        });
+      })();
+    </script>
+  </body>
+</html>
