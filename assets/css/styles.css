@@ -2247,6 +2247,18 @@ footer {
   object-fit: cover;
 }
 
+/* Abundance uses a dark transparent mark rather than a full-bleed app icon. */
+.vtl-row.is-app-abundance .vtl-card-logo {
+  padding: 8px;
+  background: #fff;
+  border: 1px solid color-mix(in srgb, var(--app) 24%, transparent);
+  box-shadow: 0 8px 18px rgba(24, 86, 65, 0.14);
+}
+
+.vtl-row.is-app-abundance .vtl-card-logo img {
+  object-fit: contain;
+}
+
 .vtl-row.is-featured .vtl-card {
   position: relative;
   max-width: 360px;

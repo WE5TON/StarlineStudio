@@ -77,8 +77,9 @@
               <noscript>
                 <ul class="studio-subcopy" style="text-align:left;max-width:none">
                   <li><strong>Completed 13 September 2026</strong> — Nytpix rebuild and major redesign</li>
-                  <li><strong>In progress</strong> — Weekly income view (Abundance)</li>
                   <li><strong>Shipped 1 October 2026</strong> — Listmas app launch</li>
+                  <li><strong>Shipped 25 October 2026</strong> — Nytpix features and seasonal themes update</li>
+                  <li><strong>Up next</strong> — Ground-up Abundance rebuild and redesign</li>
                 </ul>
               </noscript>
             </div>
@@ -150,20 +151,27 @@
          app:   nytpix | abundance | listmas
       ------------------------------------------------------------------- */
       var ITEMS = [
-        { app: "nytpix", phase: "shipped", date: "13 Sep 2026", status: "Complete", featured: true,
+        { app: "nytpix", phase: "shipped", date: "13 Sep 2026", status: "Complete",
           logo: "assets/img/logo.png", logoAlt: "Nytpix app icon", badge: "Major release",
           title: "Completely rebuilt. Thoughtfully redesigned.",
           desc: "Nytpix has been rebuilt from the ground up to make choosing movie night feel effortless, playful and beautifully polished.",
           highlights: ["A fresh, cinematic new interface", "A clearer, smoother path to the perfect pick", "More delight and polish across every screen"],
           link: "https://apps.apple.com/us/app/nytpix/id6749899310", linkLabel: "Explore Nytpix on the App Store" },
-        { app: "abundance", phase: "progress", date: "Now", status: "In progress",
-          icon: "bi-calendar-week", title: "Weekly income view",
-          desc: "A weekly breakdown of income in Abundance, alongside the existing monthly view." },
         { app: "listmas", phase: "shipped", date: "1 Oct 2026", status: "Available now",
           logo: "assets/img/ListmasAppIcon.png", logoAlt: "Listmas app icon", badge: "New app",
-          title: "Listmas launches this October",
+          title: "Listmas is live on the App Store",
           desc: "Listmas is now live on the App Store: a gift-list and holiday planning app for organising people, budgets, shopping tasks and shared lists in one joyful place.",
-          link: "https://apps.apple.com/gb/app/listmas-christmas-planner/id6762095846", linkLabel: "Get Listmas on the App Store" }
+          link: "https://apps.apple.com/gb/app/listmas-christmas-planner/id6762095846", linkLabel: "Get Listmas on the App Store" },
+        { app: "nytpix", phase: "shipped", date: "25 Oct 2026", status: "Available now", featured: true,
+          logo: "assets/img/logo.png", logoAlt: "Nytpix app icon", badge: "Big update",
+          title: "New features. A fresh look for every season.",
+          desc: "A major Nytpix update is now live, bringing new features and seasonal themes that keep every movie night feeling fresh.",
+          highlights: ["New ways to enjoy Nytpix", "Seasonal themes throughout the year", "More polish across the movie-night experience"],
+          link: "https://apps.apple.com/us/app/nytpix/id6749899310", linkLabel: "See the latest Nytpix update" },
+        { app: "abundance", phase: "planned", date: "Next", status: "Up next",
+          logo: "assets/img/abundance-logo.png", logoAlt: "Abundance app icon", badge: "Ground-up rebuild",
+          title: "Rebuilding Abundance from the ground up",
+          desc: "We're reworking the foundations of Abundance and giving the experience a thoughtful visual refresh—keeping what matters while making the app feel clearer, smoother and more modern." }
       ];
 
       (function () {
